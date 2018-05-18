@@ -11,3 +11,9 @@ But sad thing is pyautogui cannot get window size, and I had to get around it by
 * BlueStacks ([link](https://www.bluestacks.com/]))
 * Python 2.7 ([link](https://www.python.org/download/releases/2.7/))
 * pyautogui ([link](https://pyautogui.readthedocs.io/en/latest/))
+
+## TODO LIST
+- [ ] Dynamic swipe distance
+- [ ] Stop/Start button
+- [ ] Face/Ethnicity Detection
+- [ ] increase swooping speed
