@@ -1,0 +1,9 @@
+{
+    "tinder":{
+        "emulator":"BlueStacks",
+        "drag_force":"root",
+		"x_start_offset":-200,
+		"y_start_offset":150,
+		"start_img_name":"tinderLogo.png"
+    }
+}
