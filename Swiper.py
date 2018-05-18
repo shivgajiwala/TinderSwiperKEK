@@ -1,6 +1,5 @@
 import os
 import sys
-import TinderConfig
 sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '..\\lib\\PyAutoGUI-0.9.36')))
 import pyautogui
 import json
@@ -22,7 +21,7 @@ class Swiper():
         
         
     def swipeLeft(self):
-        pyautogui.moveRel(None,100)
+        pyautogui.dragRel(-400, None, 0.3)
         
     def swipeRight(self):
         pyautogui.dragRel(400, None, 0.3)
@@ -35,10 +34,11 @@ class Swiper():
         pyautogui.moveTo(self.Start_Pos[0],self.Start_Pos[1])
         pyautogui.moveRel(self.X_Start_Offset,self.Y_Start_Offset)
         pyautogui.click (clicks=1)
-    
+
 if __name__ == '__main__':
     s = Swiper()
     while True:
         s.moveToStartPos()
+        # We need to give everyone a chance by swiping right :)
         s.swipeRight();
         time.sleep(1)
